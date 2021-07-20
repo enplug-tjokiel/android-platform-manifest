@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <include name="default.xml"/>
+  <remote fetch="ssh://git@github.com/spectrio/" name="spectrio" />
+
+  <project name="android-platform-device-amlogic" path="device/amlogic" revision="5ce527d4c1ce5bc4688673ea3a0d1ee24cc4b3b9" remote="spectrio"/>
+  <project name="android-platform-common" path="common" revision="aceb35c024a29dd01c9996a73c91c493f77a1682" remote="spectrio"/>
+  <project name="android-platform-hardware-amlogic" path="hardware/amlogic" revision="fdb9c3984442edfb760ccc2ab2e622edfbffa2f5" remote="spectrio"/>
+  <project name="android-platform-hardware-arm" path="hardware/arm" revision="5ab8d8b68d7492da71078892eb0facd0a2e19c6b" remote="spectrio"/>
+  <project name="android-platform-hardware-mtk" path="hardware/mtk" revision="0e224c5322dbb1b747c544a6952aa4758de6e513" remote="spectrio"/>
+  <project name="android-platform-hardware-realtek" path="hardware/realtek" revision="2ce336947e045f443a4c49cfde41bd53fe393db8" remote="spectrio"/>
+  <project name="android-platform-hardware-wifi" path="hardware/wifi" revision="a2532b940a74be61b3ee442b173ca2b7205cf654" remote="spectrio"/>
+  <project name="android-platform-packages-apps-fotaupdateapp" path="packages/apps/FotaUpdateApp" revision="c9ac7bf5bf39103bedae8c1b03ebfb830c229c17" remote="spectrio"/>
+  <project name="android-platform-uboot" path="uboot" revision="d33c5a1732a46cf3fbe549612785294d4968e876" remote="spectrio"/>
+  <project name="android-platform-vendor-amlogic" path="vendor/amlogic" revision="8fa03a83037d6fd31e7228e7c6f11fb5c2fda34c" remote="spectrio"/>
+  <project name="android-platform-vendor-broadcom-btusb" path="vendor/broadcom/btusb" revision="41429335a8bd034ae5a4f8b4c83d6e7946107c07" remote="spectrio"/>
+  <project name="android-platform-vendor-huitong" path="vendor/huitong" revision="b2af57c64074980821a38e89fbfd3eda380bf9a8" remote="spectrio"/>
+  <project name="android-platform-vendor-widevine" path="vendor/widevine" revision="bffb5a5a46deddf007d6947b65a9c39ad49da813" remote="spectrio"/>
+
+  <remove-project name="platform/build" />
+  <project name="android-platform-build" path="build" revision="1ef494dd1d4c3286dd7b8a15b202bcf716a0a470" remote="spectrio" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <remove-project name="platform/development" />
+  <project name="android-platform-development" path="development" revision="9091ae60e8744cfb734c1ae8c9f6da7b19fc4efb" remote="spectrio"/>
+
+  <remove-project name="platform/external/zlib" />
+  <project name="android-platform-external-zlib" path="external/zlib" revision="98d387dd8c74bc6b141669980547c69192413700" remote="spectrio"/>
+
+  <remove-project name="platform/external/dng_sdk" />
+  <project name="android-platform-external-dngsdk" path="external/dng_sdk" revision="d961de0968f259e70e5303ec31138326cb2972aa" remote="spectrio"/>
+
+  <remove-project name="platform/external/e2fsprogs" />
+  <project name="android-platform-external-e2fsprogs" path="external/e2fsprogs" revision="456d4f017a0960d988f31ebe45b16d7d10587985" remote="spectrio"/>
+
+  <remove-project name="platform/external/iw" />
+  <project name="android-platform-external-iw" path="external/iw" revision="c6d61e9b5e0c0e968a2e456042c81733250eb778" remote="spectrio"/>
+
+  <remove-project name="platform/external/ppp" />
+  <project name="android-platform-external-ppp" path="external/ppp" revision="b53bf84653733ce973cb2a4a258a3340c8ad48ac" remote="spectrio"/>
+
+  <remove-project name="platform/external/sfntly" />
+  <project name="android-platform-external-sfntly" path="external/sfntly" revision="c2505eeb5217a535126a43c8ba05ab10998650da" remote="spectrio"/>
+
+  <remove-project name="platform/external/toybox" />
+  <project name="android-platform-external-toybox" path="external/toybox" revision="e04932355c04975cac2374acc7e01883859ba3e9" remote="spectrio"/>
+
+  <remove-project name="platform/external/libusb" />
+  <project name="android-platform-external-libusb" path="external/libusb" revision="db0d23dfa0a48cb65fa589c0628153042d6c2881" remote="spectrio"/>
+
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <project name="android-platform-external-libjpegturbo" path="external/libjpeg-turbo" revision="500c737b487a9e052b5472889ad14e1fd087b60d" remote="spectrio"/>
+
+  <remove-project name="platform/external/libpng" />
+  <project name="android-platform-external-libpng" path="external/libpng" revision="f3f4b89768da41a48426a54b110b8336ee088115" remote="spectrio"/>
+
+  <remove-project name="platform/external/libavc" />
+  <project name="android-platform-external-libavc" path="external/libavc" revision="05ccad12e7a2e0227d6b848880fad7db6a393686" remote="spectrio"/>
+
+  <remove-project name="platform/external/tremolo" />
+  <project name="android-platform-external-tremolo" path="external/tremolo" revision="f5a95f4ce5fb037ec91bb5b144c69173ee4c8873" remote="spectrio"/>
+
+  <remove-project name="platform/external/boringssl" />
+  <project name="android-platform-external-boringssl" path="external/boringssl" revision="819bf9b79cc69d7df717418930ce9d13bdfc86b0" remote="spectrio"/>
+
+  <remove-project name="platform/external/libxml2" />
+  <project name="android-platform-external-libxml2" path="external/libxml2" revision="09519a35ecc889538e31e46a936d7bdca8bce9ff" remote="spectrio"/>
+
+  <remove-project name="platform/external/libmpeg2" />
+  <project name="android-platform-external-libmpeg2" path="external/libmpeg2" revision="167466bd69184e6b50b88cec3e7a5debca23ae4d" remote="spectrio"/>
+
+  <remove-project name="platform/external/skia" />
+  <project name="android-platform-external-skia" path="external/skia" revision="35d1b001741dadf6092ee3dd4313ff98cd8bf13b" remote="spectrio"/>
+
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <project name="android-platform-external-wpasupplicant8" path="external/wpa_supplicant_8" revision="6dbfa4168c36abebacf94391e87de37453997d8c" remote="spectrio"/>
+
+  <remove-project name="platform/external/sqlite" />
+  <project name="android-platform-external-sqlite" path="external/sqlite" revision="a3ded2828f9fad1cb19cb34f7071c22daaf0c2bf" remote="spectrio"/>
+
+  <remove-project name="platform/external/libyuv" />
+  <project name="android-platform-external-libyuv" path="external/libyuv" revision="c272d6e257af67956d9bdcd9c042f99fa82648a5" remote="spectrio"/>
+
+  <remove-project name="platform/external/libvpx" />
+  <project name="android-platform-external-libvpx" path="external/libvpx" revision="bf3759b0948980e86d8133dd78271c073bdae51a" remote="spectrio"/>
+
+  <remove-project name="platform/external/sonivox" />
+  <project name="android-platform-external-sonivox" path="external/sonivox" revision="10ce7a78de885333bfddc89a550d1ac2c091a638" remote="spectrio"/>
+
+  <remove-project name="platform/external/libhevc" />
+  <project name="android-platform-external-libhevc" path="external/libhevc" revision="a8c359275375a52f61432590c12e5372cbaea51d" remote="spectrio"/>
+
+  <remove-project name="platform/bootable/recovery" />
+  <project name="android-platform-bootable-recovery" path="bootable/recovery" revision="f9f5098edabb7dbe5413496e12624139cdc680fe" remote="spectrio"/>
+
+  <remove-project name="platform/bionic" />
+  <project name="android-platform-bionic" path="bionic" revision="cd03c488ba9d8c89b1d665ef6cef5519679c129d" remote="spectrio"/>
+
+  <remove-project name="platform/frameworks/native" />
+  <project name="android-platform-frameworks-native" path="frameworks/native" revision="9d3449778985b00ecebf95c2bfeba44ba546e1ca" remote="spectrio"/>
+
+  <remove-project name="platform/frameworks/av" />
+  <project name="android-platform-frameworks-av" path="frameworks/av" revision="d5fe59c2c46681c7a46649ceaf6f22c20fc5297c" remote="spectrio"/>
+
+  <remove-project name="platform/frameworks/base" />
+  <project name="android-platform-frameworks-base" path="frameworks/base" revision="bbd98ded9497bd40ec7dae3365101723b0d44a4f" remote="spectrio"/>
+
+  <remove-project name="platform/frameworks/opt/net/wifi" />
+  <project name="android-platform-frameworks-opt-net-wifi" path="frameworks/opt/net/wifi" revision="d9a2e23fa543e7404e52ad94991c9b5b29e9de17" remote="spectrio"/>
+
+  <remove-project name="platform/hardware/libhardware_legacy" />
+  <project name="android-platform-hardware-libhardwarelegacy" path="hardware/libhardware_legacy" revision="581ed539d2d6503c2867cdc9e0cb1018d271a370" remote="spectrio"/>
+
+  <remove-project name="platform/hardware/libhardware" />
+  <project name="android-platform-hardware-libhardware" path="hardware/libhardware" revision="9a92058b68cf46bd1956bbb0db3bab86b1f2bf51" remote="spectrio"/>
+
+  <remove-project name="platform/hardware/qcom/bt" />
+  <project name="android-platform-hardware-qcom-bt" path="hardware/qcom/bt" revision="d66110db91a769252da002948ee58415038453f8" remote="spectrio"/>
+
+  <remove-project name="platform/libcore" />
+  <project name="android-platform-libcore" path="libcore" revision="b64dffb8f64a5660a9779b2e00e93fbb5f57c51d" remote="spectrio"/>
+
+  <remove-project name="platform/system/bt" />
+  <project name="android-platform-system-bt" path="system/bt" revision="7fd9cb5ccfd37a83698344407f2f7c18a33deb41" remote="spectrio"/>
+
+  <remove-project name="platform/system/update_engine" />
+  <project name="android-platform-system-updateengine" path="system/update_engine" revision="058f2aeb231562add127b9c521634dd044c2cbb8" remote="spectrio"/>
+
+  <remove-project name="platform/system/core" />
+  <project name="android-platform-system-core" path="system/core" revision="3cba0cc6a9bbb3218cf9872750d62eb28904dad8" remote="spectrio"/>
+
+  <remove-project name="platform/system/vold" />
+  <project name="android-platform-system-vold" path="system/vold" revision="14da67a4bd3688ad616b93c20f40830602866e9b" remote="spectrio"/>
+
+  <remove-project name="platform/system/extras" />
+  <project name="android-platform-system-extras" path="system/extras" revision="7f569badaa0a5dd670e26d20304ef42bb672f4b9" remote="spectrio"/>
+
+  <remove-project name="platform/system/sepolicy" />
+  <project name="android-platform-system-sepolicy" path="system/sepolicy" revision="6f9802a6b13f429b155f0f1bd1319734090b89f8" remote="spectrio"/>
+
+  <remove-project name="platform/system/media" />
+  <project name="android-platform-system-media" path="system/media" revision="9b557186798af2244f6ee0f7c9fa4d52a11d989a" remote="spectrio"/>
+
+  <remove-project name="platform/system/keymaster" />
+  <project name="android-platform-system-keymaster" path="system/keymaster" revision="516074c43ea977f200214897a221674795d74cd1" remote="spectrio"/>
+
+  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <project name="android-platform-prebuilts-gcc-linux-x86-aarch64-aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="837378c87875014716e192d15579b1afc69fb319" remote="spectrio"/>
+
+  <remove-project name="platform/prebuilts/qemu-kernel" />
+  <project name="android-platform-prebuilts-qemukernel" path="prebuilts/qemu-kernel" revision="a53244623465235cc5522998ecd63f686bb5e2f2" clone-depth="1" remote="spectrio"/>
+
+  <remove-project name="platform/prebuilts/tools" />
+  <project name="android-platform-prebuilts-tools" path="prebuilts/tools" revision="93515f822f63bb80514f2fa8cdc2893ce31d0b0d" remote="spectrio"/>
+
+  <remove-project name="platform/packages/inputmethods/LatinIME" />
+  <project name="android-platform-packages-inputmethods-latinime" path="packages/inputmethods/LatinIME" revision="4778ecf6a18566b27494edaeec191c49ec418ea4" remote="spectrio"/>
+
+  <remove-project name="platform/packages/providers/TvProvider" />
+  <project name="android-platform-packages-providers-tvprovider" path="packages/providers/TvProvider" revision="cac7bfc56774a56e383e5f62c6f78d0f763ed071" remote="spectrio"/>
+
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <project name="android-platform-packages-providers-mediaprovider" path="packages/providers/MediaProvider" revision="ecd7167fc97a8fd6b596999c5ac91ae29a42e70a" remote="spectrio"/>
+
+  <remove-project name="platform/packages/providers/DownloadProvider" />
+  <project name="android-platform-packages-providers-downloadprovider" path="packages/providers/DownloadProvider" revision="858da46f9ecafa86c2c8aeb9beae439c0a56d90d" remote="spectrio"/>
+
+  <remove-project name="platform/packages/apps/Music" />
+  <project name="android-platform-packages-apps-music" path="packages/apps/Music" revision="a505c2eba9862365409d750e711c364a0225e633" remote="spectrio"/>
+
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project name="android-platform-packages-apps-launcher3" path="packages/apps/Launcher3" revision="ed706d631d198a798e339a528ee38ea87994a6e3" remote="spectrio"/>
+
+  <remove-project name="platform/packages/apps/DeskClock" />
+  <project name="android-platform-packages-apps-deskclock" path="packages/apps/DeskClock" revision="071fa0198a3a1444a7b98a3d58986a2792959d4a" remote="spectrio"/>
+
+  <remove-project name="platform/packages/apps/Browser2" />
+  <project name="android-platform-packages-apps-browser2" path="packages/apps/Browser2" revision="3cbb958f33ebb79bdf6bb9658f12ac566d8be108" remote="spectrio"/>
+
+  <remove-project name="platform/packages/apps/Camera2" />
+  <project name="android-platform-packages-apps-camera2" path="packages/apps/Camera2" revision="c56efe29e593a577a1938528b1b0a38af88734e5" remote="spectrio"/>
+
+  <remove-project name="platform/packages/apps/Gallery2" />
+  <project name="android-platform-packages-apps-gallery2" path="packages/apps/Gallery2" revision="3724fb3cc48e1df7a0349873e4966e6beb046999" remote="spectrio"/>
+
+  <remove-project name="platform/packages/apps/TV" />
+  <project name="android-platform-packages-apps-tv" path="packages/apps/TV" revision="193c8b286c173753c1ea1388f5d3043c5fac8535" remote="spectrio"/>
+
+  <remove-project name="platform/packages/apps/Settings" />
+  <project name="android-platform-packages-apps-settings" path="packages/apps/Settings" revision="9b7d3661f46a3639add98c715b3516d128cda028" remote="spectrio"/>
+
+  <remove-project name="platform/packages/apps/Launcher2" />
+  <project name="android-platform-packages-apps-launcher2" path="packages/apps/Launcher2" revision="e4ac5c1db0cc45b13c7e05c86a72f3fd29232959" remote="spectrio"/>
+
+  <remove-project name="platform/packages/apps/Bluetooth" />
+  <project name="android-platform-packages-apps-bluetooth" path="packages/apps/Bluetooth" revision="b0bd7892d0b0d7bf7dc7c9d83708ccb50f898c5b" remote="spectrio"/>
+
+  <remove-project name="platform/packages/apps/TvSettings" />
+  <project name="android-platform-packages-apps-tvsettings" path="packages/apps/TvSettings" revision="d9f8ad846ecda1474e9729bab06e9b991915cd23" remote="spectrio"/>
+
+  <remove-project name="platform/packages/apps/PackageInstaller" />
+  <project name="android-platform-packages-apps-packageinstaller" path="packages/apps/PackageInstaller" revision="b0515a343349d1f5caabb074b7e5f7ebbf55c0e9" remote="spectrio"/>
+
+
+
+  <remove-project name="platform/compatibility/cdd" />
+  <remove-project name="device/asus/fugu" />
+  <remove-project name="device/asus/fugu-kernel" />
+  <remove-project name="device/common" />
+  <remove-project name="device/generic/arm64" />
+  <remove-project name="device/generic/armv7-a-neon" />
+  <remove-project name="device/generic/common" />
+  <remove-project name="device/generic/goldfish" />
+  <remove-project name="device/generic/goldfish-opengl" />
+  <remove-project name="device/generic/mips" />
+  <remove-project name="device/generic/mips64" />
+  <remove-project name="device/generic/mini-emulator-arm64" />
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-mips" />
+  <remove-project name="device/generic/mini-emulator-mips64" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="device/google/accessory/arduino" />
+  <remove-project name="device/google/accessory/demokit" />
+  <remove-project name="device/google/atv" />
+  <remove-project name="device/google/contexthub" />
+  <remove-project name="device/google/dragon" />
+  <remove-project name="device/google/dragon-kernel" />
+  <remove-project name="device/google/marlin" />
+  <remove-project name="device/google/marlin-kernel" />
+  <remove-project name="device/htc/flounder" />
+  <remove-project name="device/htc/flounder-kernel" />
+  <remove-project name="device/huawei/angler" />
+  <remove-project name="device/huawei/angler-kernel" />
+  <remove-project name="device/intel/edison" />
+  <remove-project name="device/lge/bullhead" />
+  <remove-project name="device/lge/bullhead-kernel" />
+  <remove-project name="device/linaro/hikey" />
+  <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="device/moto/shamu" />
+  <remove-project name="device/moto/shamu-kernel" />
+  <remove-project name="device/sample" />
+  <remove-project name="platform/external/adt-infra" />
+  <remove-project name="platform/external/android-mock" />
+  <remove-project name="platform/external/donuts" />
+  <remove-project name="platform/external/eclipse-basebuilder" />
+  <remove-project name="platform/external/embunit" />
+  <remove-project name="platform/external/ImageMagick" />
+  <remove-project name="platform/external/ims" />
+  <remove-project name="platform/external/jline" />
+  <remove-project name="platform/external/jmonkeyengine" />
+  <remove-project name="platform/external/libgdx" />
+  <remove-project name="platform/external/lld" />
+  <remove-project name="platform/external/lldb" />
+  <remove-project name="platform/external/marisa-trie" />
+  <remove-project name="platform/external/openfst" />
+  <remove-project name="platform/external/openssh" />
+  <remove-project name="platform/external/universal-tween-engine" />
+  <remove-project name="platform/frameworks/opt/emoji" />
+  <remove-project name="platform/frameworks/opt/inputconnectioncommon" />
+  <remove-project name="platform/hardware/akm" />
+  <remove-project name="platform/hardware/broadcom/libbt" />
+  <remove-project name="platform/hardware/intel/audio_media" />
+  <remove-project name="platform/hardware/intel/bootstub" />
+  <remove-project name="platform/hardware/intel/common/bd_prov" />
+  <remove-project name="platform/hardware/intel/common/libmix" />
+  <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
+  <remove-project name="platform/hardware/intel/common/libva" />
+  <remove-project name="platform/hardware/intel/common/libwsbm" />
+  <remove-project name="platform/hardware/intel/common/omx-components" />
+  <remove-project name="platform/hardware/intel/common/utils" />
+  <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
+  <remove-project name="platform/hardware/intel/img/hwcomposer" />
+  <remove-project name="platform/hardware/intel/img/psb_headers" />
+  <remove-project name="platform/hardware/intel/img/psb_video" />
+  <remove-project name="platform/hardware/intel/sensors" />
+  <remove-project name="platform/hardware/invensense" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/keymaster" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/qcom/msm8960" />
+  <remove-project name="platform/hardware/qcom/msm8994" />
+  <remove-project name="platform/hardware/qcom/msm8x26" />
+  <remove-project name="platform/hardware/qcom/msm8x27" />
+  <remove-project name="platform/hardware/qcom/msm8x84" />
+  <remove-project name="platform/hardware/qcom/power" />
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <remove-project name="platform/hardware/ti/omap3" />
+  <remove-project name="platform/hardware/ti/omap4-aah" />
+  <remove-project name="platform/hardware/ti/omap4xxx" />
+  <remove-project name="platform/packages/apps/Phone" />
+  <remove-project name="platform/packages/apps/RetailDemo" />
+  <remove-project name="platform/packages/apps/SafetyRegulatoryInfo" />
+  <remove-project name="platform/packages/apps/StorageManager" />
+  <remove-project name="platform/packages/apps/WallpaperPicker" />
+  <remove-project name="platform/prebuilts/android-emulator" />
+  <remove-project name="platform/prebuilts/devtools" />
+  <remove-project name="platform/prebuilts/eclipse" />
+  <remove-project name="platform/prebuilts/eclipse-build-deps" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gradle-plugin" />
+  <remove-project name="platform/prebuilts/libs/libedit" />
+  <remove-project name="platform/prebuilts/maven_repo/android" />
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+  <remove-project name="platform/system/nvram" />
+  <remove-project name="platform/test/vts" />
+  <remove-project name="platform/tools/adt/idea" />
+  <remove-project name="platform/tools/base" />
+  <remove-project name="platform/tools/build" />
+  <remove-project name="platform/tools/idea" />
+  <remove-project name="platform/tools/loganalysis" />
+  <remove-project name="platform/tools/motodev" />
+  <remove-project name="platform/tools/studio/cloud" />
+  <remove-project name="platform/tools/swt" />
+  <remove-project name="platform/tools/tradefederation" />
+
+</manifest>

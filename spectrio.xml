@@ -5,7 +5,7 @@
 
 
   <project name="android-platform-device-amlogic" path="device/amlogic" revision="12fc28cbea6071bda004b4ef7f8505d66c29464d" remote="spectrio"/>
-  <project name="android-platform-common" path="common" revision="aceb35c024a29dd01c9996a73c91c493f77a1682" remote="spectrio"/>
+  <project name="android-platform-common" path="common" revision="95c743a4f931d29f0697dce17f284bed991d07e0" remote="spectrio"/>
   <project name="android-platform-hardware-amlogic" path="hardware/amlogic" revision="fdb9c3984442edfb760ccc2ab2e622edfbffa2f5" remote="spectrio"/>
   <project name="android-platform-hardware-arm" path="hardware/arm" revision="5ab8d8b68d7492da71078892eb0facd0a2e19c6b" remote="spectrio"/>
   <project name="android-platform-hardware-mtk" path="hardware/mtk" revision="0e224c5322dbb1b747c544a6952aa4758de6e513" remote="spectrio"/>
